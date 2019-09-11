@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2019_09_11_055915) do
 
   create_table "riddles", force: :cascade do |t|
     t.text "question"
-    t.text "description"
+    t.text "answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

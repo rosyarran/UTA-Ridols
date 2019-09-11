@@ -1,1 +1,8 @@
 <h1>SOLVE THE RIDDLE!</h1>
+
+
+<h2>
+  <% Riddle.all.each do |riddle| %>
+    <%= riddle.question %>
+  <% end %>
+</h2>
