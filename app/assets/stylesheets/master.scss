@@ -1,11 +1,75 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Handlee|Special+Elite&display=swap');
 
-.clear {
-  clear: both;
+.module {
+  max-width: 400px;
+  padding: 3rem;
+  background: image_url('green_dust_scratch.png');
+  
+  --notchSize: 20px;
+  
+  clip-path: 
+    polygon(
+      0% var(--notchSize), 
+      var(--notchSize) 0%, 
+      calc(100% - var(--notchSize)) 0%, 
+      100% var(--notchSize), 
+      100% calc(100% - var(--notchSize)), 
+      calc(100% - var(--notchSize)) 100%, 
+      var(--notchSize) 100%, 
+      0% calc(100% - var(--notchSize))
+    );
 }
 
-.logo {
-  width: 30px;
-  height: 30px;
+.logo:hover {
+  color: lightcoral;
+  text-decoration: overline underline;
 }
+
+.mod-answer {
+  background: image_url('pink_rice.png');
+}
+
+.riddle-answer {
+  color: brown;
+
+}
+
+h1 {
+  color: cadetblue;
+  margin: 0 0 1rem 0;
+  font-family: 'Special Elite', cursive;
+}
+h2 {
+  color: floralwhite;
+  margin: 0;
+}
+
+h3 {
+  color: khaki;
+}
+
+body {
+  height: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Handlee', cursive;
+  line-height: 1.4;
+  margin: 1rem;
+  background: radial-gradient(
+    circle farthest-corner,
+    #333,
+    #111
+  );
+  background: image_url('hotel-wallpaper-black.png');
+  height: 100vh;
+  overflow: hidden;
+}
+
+::selection {
+  background-color: #D8E8FF;
+  color: #6D6D7F;
+ }
+
 

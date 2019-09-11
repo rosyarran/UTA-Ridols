@@ -1,7 +1,7 @@
 class RiddlesController < ApplicationController
   
   def index
-    @riddles = Riddle.all
+    @riddle = Riddle.order("RANDOM()").first
   end
   
 end

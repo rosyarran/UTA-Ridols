@@ -1,8 +1,16 @@
-<h1>SOLVE THE RIDDLE!</h1>
+  <div class="module">
+
+    <h1>SOLVE THE RIDDLE!</h1>
 
 
-<h2>
-  <% Riddle.all.each do |riddle| %>
-    <%= riddle.question %>
-  <% end %>
-</h2>
+    <h2>
+        <%= @riddle.question %>
+    </h2>
+
+    <button type="button" class="btn btn-outline-dark btn-sm float-right" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Answer</button>
+
+  </div>
+
+  <div class="module collapse mod-answer" id="collapseExample">
+    <h2 class="riddle-answer"><%= @riddle.answer %></h2>
+  </div>
