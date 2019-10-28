@@ -1,4 +1,5 @@
 class RiddlesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
   
   def index
     @riddle = Riddle.order("RANDOM()").first
@@ -9,7 +10,7 @@ class RiddlesController < ApplicationController
   end
   
   def create
-    Riddle.create(riddle_params)
+    current_user.riddles.create(riddle_params)
     redirect_to root_path
   end
   
