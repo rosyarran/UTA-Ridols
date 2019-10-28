@@ -1,0 +1,9 @@
+<div class="module">
+  <h1>Enter A New Riddle</h1>
+  <%= simple_form_for @riddle do |f| %>
+    <%= f.input :question %>
+    <%= f.input :answer %>
+    <br />
+    <%= f.submit 'Submit', class: "btn btn-info" %>
+  <% end %>
+</div>

@@ -18,7 +18,11 @@
       </div>
       <div>
         <form class="form-inline">
-          <button class="btn btn-secondary my-2 my-sm-0 float-right" type="submit">Another!</button>
+          <%= link_to 'Another Riddle!', '#', class: 'btn btn-secondary my-2 my-sm-0 float-right' %>
+        </form>
+        <br />
+        <form class="form-inline">
+          <%= link_to 'Create Riddle', new_riddle_path, class: 'btn btn-secondary my-2 my-sm-0 float-right' %>
         </form>
       </div>
     </nav>
